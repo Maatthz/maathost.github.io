@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Biblioteca de Icones-->
+    <!--Matheus Vieira da Cunha e Silva - 1230103129 -->
+    <title>Fale Comigo</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico">
+</head>
+<body>
+  <header>
+     <nav>
+     <ul>
+          <li><a href="index.html">Pagina Inicial</a></li>
+          <li><a href="sobrenos.html">Sobre Nós</a></li>
+          <li><a href="vps.html">VPS</a></li>
+          <li><a href="novidades.html">Novidades</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
+     </ul>
+     </nav>
+  </header>
+  <main> 
+    <h1>Fale Conosco</h1>
+    <p>Caso tenha alguma sugestão, reclamação, elogio ou qualquer outra coisa que precise falar com a gente, entre em contato pelo formulário ou pelos links de nossas redes
+encontrados abaixo.</p>
+    <p>Será um prazer imensurável atender à você.</p>
+    <hr>
+   <div class="form">
+    <form autocomplete="on" accept-charset="utf-8"  id="contato">  
+         <label for="i_nome">Nome:</label>
+         <input type="text" name="nome" id="i_nome" required onkeyup="success()">    
+         <label for="i_email">Email:</label>
+         <input type="text" name="email" id="i_email" required onkeyup="success()">
+         <label for="i_assunto" name="assunto">Assunto:</label>
+          <select name="assunto" id="i_assunto" required>
+            <option value="sugestao">Sugestão</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+            <option value="outros">Outros</option>
+          </select>       
+         <label for="i_mensagem">Mensagem:</label>
+         <textarea name="i_mensagem" id="i_mensagem" cols="30" rows="10" required onkeyup="success()"></textarea>
+         <input type="submit" value="Enviar" onclick="MyMessage()" id="button" disabled>
+
+    </form>
+    <script>
+      function success() {
+        let nomeEl = document.querySelector('#i_nome');
+        let emailEl = document.querySelector('#i_email')
+        let mensagemEl = document.querySelector('#i_mensagem')
+        let buttonEl = document.querySelector('#button')
+
+
+        if (nomeEl.value == "" || emailEl.value == "" || mensagemEl.value == "")
+            buttonEl.disabled = true; 
+        else
+            buttonEl.disabled = false;
+
+    }       
+      function MyMessage() {
+  alert("Mensagem enviada com sucesso!");
+      }
+
+    </script>
+   </div>
+    <hr>
+    <div class="sociais">
+    <h2>Nossas Redes Sociais</h2>
+    </div>
+    <section>
+      <p><a href="https://facebook.com/facebookBrasil" class="fa fa-facebook" target="_blank"></a>
+         <a href="https://twitter.com/twitter" class="fa fa-twitter" target="_blank"></a>
+         <a href="https://instagram.com/instagram/" class="fa fa-instagram" target="_blank"></a>
+         <a href="https://github.com/maatthz" class="fa fa-github" target="_blank"></a>
+    </section>  
+ </main>
+
+
+ <footer>© MaaT HosT - Direitos Reservados 2012-2023 ©</footer>
+ 
+
+ <!--Não possuo muitas redes sociais, então coloquei os perfis oficiais de cada rede social, assim mostrando apenas conhecimento.-->
+</body>
+</html>

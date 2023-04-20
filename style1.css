@@ -1,0 +1,185 @@
+/* Matheus Vieira da Cunha e Silva - 1230103129 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li {           /*Links em linha e com margem a direita*/
+    margin-right: 20px;
+    display: inline-block;
+}
+header {              /*Cor do Menu, alinhamento e caixa*/
+    padding: 1px;
+    background-color: #6198cf;
+    text-align: center;
+}
+nav ul li a:hover {  /*Botão do Menu com Clareamento*/
+    background-color: rgb(148, 181, 199)
+}
+nav ul li a {       /*Estilos da fonte, caixa link*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; 
+    padding: 10px;
+}
+body { /*Cor do background*/
+    background-color: #7daddd;
+}
+main {   /*Cor do conteúdo #7daddd  #edf2fb*/
+    background-color: #edf2fb;
+    padding: 1px 10px 10px 10px;
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+footer{
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #6198cf;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+}
+p {  /*Estilo do parágrafo*/
+    font-size: 18px;
+    margin-left: 20px;
+}
+textarea {  /*Tamanho do chatbox de mensagem*/
+    width: 30%;
+    height: 150px;
+    box-sizing: border-box;
+}
+h1 { /*Titulo nivel 1*/
+    text-align: center;
+    font-size: 28px;
+}
+input[type=text], select { /*Tamanho do box de email*/
+    width: 30%;
+    padding: 5px 0px;
+}
+select {
+    text-align: center;
+    font-size: 16px;
+}
+.form {
+    text-align: center;
+    font-size: 18px;
+}
+label{
+    display: block;
+    width: 100%;
+}
+input {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+input[type=submit] {
+    padding: 12px 20px;
+    background-color: rgb(70, 124, 196);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input[type=submit]:hover {
+    background-color: rgb(158, 184, 218) ;
+}
+/*Estilo botões redes sociais*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/*Facebook*/
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+/*Twitter*/
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}  
+/*Instagram*/
+.fa-instagram {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;        
+}
+
+/*Github*/
+.fa-github {
+    background: black;
+    color: white;
+}
+section {
+    text-align: center;
+}
+
+.imgport {
+    text-align: center;
+}
+.subt {
+    text-align: left;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.sociais {
+    text-align: center;
+    font-size: 18px;
+}
+.aboutme {
+    text-align: center;
+}
+.vps .vps_ {
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+.vps {
+    text-align: center;
+}
+.butvps {
+    padding: 12px 100px;
+    background-color: green;
+    color: white;
+}
+.vps_ h3 {
+    border: 2px solid #0353a4;
+    background-color: #0353a4;
+    color: white;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+.sobre {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+}
+.fotodata {
+    margin-left: 28%;
+}
+.butvps:hover{
+    background-color: rgb(34, 165, 34);
+}
+.expvps{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+}
